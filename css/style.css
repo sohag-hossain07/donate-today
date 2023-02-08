@@ -5,11 +5,14 @@
 :root {
   --primary-color: #ff6666;
   --secondary-color: #121212;
-  --text-color: 707070;
+  --text-color: #707070;
   --white-color: #fff;
+  --light-gray-color: #b3b3b3;
+  --border-gray: #dadada;
   --bg-blue: rgba(79, 157, 166, 0.1);
   --bg-red: rgba(255, 89, 89, 0.1);
   --bg-yellow: #fff4d6;
+  --bg-light-gray: #fafafa;
 }
 
 /* utilities */
@@ -36,11 +39,23 @@ body {
   padding: 0 15px;
 }
 
+.mg-top {
+  margin-top: 4rem;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 
 p {
@@ -65,7 +80,7 @@ img {
 
 /* header section starts */
 header {
-  background-image: linear-gradient(180deg, #12121217, #121212e0),
+  background-image: linear-gradient(180deg, #12121217, #070707e0),
     url(/images/donation2.jpg);
   background-size: cover;
   background-position: center;
@@ -93,7 +108,7 @@ header {
   font-weight: 400;
 }
 
-.button {
+.btn-center {
   padding: 0.6rem 1.8rem;
   color: var(--white-color);
   background-color: var(--primary-color);
@@ -103,7 +118,98 @@ header {
   border: 2px solid var(--primary-color);
   border-radius: 3px;
   margin-top: 20px;
+  cursor: pointer;
 }
+
+/* updated donate info section starts */
+.section-header {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.donation-amount {
+  width: 70%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin: 50px auto;
+}
+
+.amount {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  background-color: var(--bg-light-gray);
+  border: 2px solid var(--bg-light-gray);
+  border-radius: 5px;
+}
+
+.bg-red {
+  background-color: var(--bg-red);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.other-amount {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: var(--light-gray-color);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
+/* updated donate info section ends */
+
+/* our donate plan section starts */
+.donate-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.plan-box {
+  text-align: center;
+  border-radius: 5px;
+  padding: 3rem 1rem;
+}
+
+.blue {
+  background-color: var(--bg-blue);
+}
+
+.red {
+  background-color: var(--bg-red);
+}
+
+.yellow {
+  background-color: var(--bg-yellow);
+}
+
+.plan-box > img {
+  width: 3.9rem;
+}
+
+.plan-title {
+  margin: 2rem 0 1rem;
+}
+
+.plan-description {
+  margin: 0;
+}
+/* our donate plan section ends */
 
 /*
 font-family: 'Open Sans', sans-serif;
