@@ -91,6 +91,10 @@ header {
 
 .banner {
   width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .banner-title,
@@ -159,7 +163,6 @@ header {
 }
 
 .other-amount {
-  margin: 0;
   padding: 10px 0;
   text-align: center;
   color: var(--light-gray-color);
@@ -223,6 +226,10 @@ header {
   order: 1;
 }
 
+.blog-image {
+  width: 100%;
+}
+
 .btn-left {
   display: flex;
   justify-content: flex-start;
@@ -280,5 +287,4 @@ footer {
 .footer-description {
   font-size: 14px;
   font-weight: 200;
-  margin: 0;
 }

@@ -4,10 +4,59 @@
 
 /* small screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .banner {
+    max-width: 600px;
+  }
+
+  section.donate-plans {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .subscribe {
+    max-width: 600px;
+    padding: 3rem 1rem;
+  }
 }
 
 /* medium screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .banner-title {
+    font-size: 65px;
+    line-height: 78.66px;
+  }
+
+  p,
+  p.banner-description {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .banner {
+    max-width: 826px;
+  }
+
+  section.donate-plans {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .blog {
+    max-width: 900px;
+    margin: 50px auto 0;
+  }
+
+  .subscribe {
+    max-width: 750px;
+  }
 }
 
 /* ==================================================================== 
@@ -16,12 +65,103 @@
 
 /* large screen */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .blog {
+    max-width: 950px;
+  }
 }
 
 /* extra large screen */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .blog {
+    max-width: 1032px;
+  }
 }
 
 /* x-extra large screen */
 @media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .blog {
+    max-width: 1032px;
+  }
+}
+
+/* common styles */
+@media screen and (min-width: 992px) {
+  .banner-title {
+    font-size: 65px;
+    line-height: 78.66px;
+  }
+
+  p,
+  p.banner-description {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .banner {
+    max-width: 826px;
+  }
+
+  .donation-amount {
+    width: 100%;
+    max-width: 765px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .amount {
+    max-width: 135px;
+    height: 123px;
+  }
+
+  .donate-plans {
+    max-width: 1130px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .plan-box {
+    flex-basis: 31%;
+  }
+
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem auto 0;
+  }
+
+  .blog-header {
+    flex-basis: 50%;
+  }
+
+  .blog-one > .blog-image {
+    order: 1;
+  }
+
+  .blog-image {
+    flex-basis: 45%;
+  }
+
+  .subscribe {
+    max-width: 809px;
+    padding: 3rem 1rem;
+  }
 }
