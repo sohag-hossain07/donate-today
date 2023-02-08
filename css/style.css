@@ -1,0 +1,64 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap");
+
+/* css variables */
+:root {
+  --primary-color: #ff6666;
+  --secondary-color: #121212;
+  --text-color: 707070;
+  --white-color: #fff;
+  --bg-blue: rgba(79, 157, 166, 0.1);
+  --bg-red: rgba(255, 89, 89, 0.1);
+  --bg-yellow: #fff4d6;
+}
+
+/* utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 200ms;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* header section starts */
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
